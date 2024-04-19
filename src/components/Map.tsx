@@ -33,18 +33,29 @@ const StyledSVG = styled.svg`
 `;
 
 const ItemList = styled.div`
-    display: grid;
-    grid-gap: 20px;
     margin-top: 20px;
-    width: 90%;
     animation: ${animate} 0.5s;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 200px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 150px;
     }
 
     @media (max-width: 767px) {
+        display: grid;
         grid-template-columns: 1fr;
+        column-gap: 15px;
+        margin: 0 auto;
     }
 `;
 
