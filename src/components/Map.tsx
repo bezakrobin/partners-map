@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import styled, { keyframes } from "styled-components";
+import './style.css';
 
 interface MapContainerProps {
     backgroundColor: string;
@@ -213,13 +214,13 @@ export const Map: React.FC = () => {
             case "ustecky_kraj":
                 return "Ústecký Kraj";
             default:
-                return "Mapa partnerů";
+                return "Mapa partnerských podniků";
         }
     };
 
     return (
         <MapContainer backgroundColor={settings?.backgroundColor || '#dbdbdb'}>
-            <Title>
+            <Title className="heading">
                 {getTitle()}
             </Title>
             <StyledSVG viewBox="0 0 1412 809">
