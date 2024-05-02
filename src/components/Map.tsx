@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import styled, { keyframes } from "styled-components";
-import './style.css';
+import { createGlobalStyle } from 'styled-components';
 
 interface MapContainerProps {
     backgroundColor: string;
@@ -13,6 +13,15 @@ const animate = keyframes`
     to {
         opacity: 1;
     }
+`;
+
+const TahomaFont = require('../tahoma.ttf');
+
+const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'TahomaFont';
+    src: url(${TahomaFont}) format('truetype');
+  }
 `;
 
 const MapContainer = styled.div<MapContainerProps>`
@@ -82,6 +91,7 @@ const Title = styled.div`
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'TahomaFont', sans-serif;
 `;
 
 const NoResultsText = styled.p`
@@ -220,6 +230,7 @@ export const Map: React.FC = () => {
 
     return (
         <MapContainer backgroundColor={settings?.backgroundColor || '#dbdbdb'}>
+            <GlobalStyles />
             <Title className="heading">
                 {getTitle()}
             </Title>
