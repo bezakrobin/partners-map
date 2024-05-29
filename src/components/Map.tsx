@@ -75,8 +75,8 @@ const Item = styled.div`
 `;
 
 const Logo = styled.img`
-    width: auto;
-    height: 150px;
+    height: auto;
+    max-width: 150px;
     margin-bottom: 10px;
     margin-right: 10px;
 `;
@@ -115,6 +115,7 @@ interface Item {
     name: string;
     region: string;
     logoUrl: string;
+    url: string;
 }
 
 const SelectablePath: React.FC<SelectablePathProps> = ({ id, d, strokeColor, fillColor, selectedFillColor, strokeWidth, onSelect, isSelected}) => {
@@ -395,7 +396,7 @@ export const Map: React.FC = () => {
                     <ItemList>
                         {filteredItemListData.length > 0 && (
                             filteredItemListData.map(item => (
-                                <Item key={item.id}>
+                                <Item key={item.id} onClick={() => window.open(item.url, '_blank')}>
                                     <Logo src={item.logoUrl} alt="Logo"/>
                                     <ItemName>{item.name}</ItemName>
                                 </Item>
