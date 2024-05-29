@@ -59,7 +59,7 @@
   { "id": 58, "name": "Cukrárna Lovely Dream", "region": "praha", "logoUrl": "https://www.lovelydream.cz/themes/dd/img/logo.svg", "url": "https://www.lovelydream.cz/" },
   { "id": 59, "name": "Kiosek coffee", "region": "praha", "logoUrl": "./img_2.png", "url": "https://www.instagram.com/kiosek.coffee/" },
   { "id": 60, "name": "La Bottega OAKS Deli bistro", "region": "praha", "logoUrl": "https://delibistro.oaksprague.cz/files/navrh-bez-nazvu.png", "url": "https://delibistro.oaksprague.cz/" },
-  { "id": 61, "name": "Low Carb Zone", "region": "praha", "logoUrl": "https://cdn.myshoptet.com/usr/www.lowcarbzone.cz/user/logos/lowcarbwhite.png", "url": "https://www.lowcarbzone.cz/" },
+  { "id": 61, "name": "Low Carb Zone", "region": "praha", "logoUrl": "./img_4.png", "url": "https://www.lowcarbzone.cz/" },
   { "id": 62, "name": "Mlsná Kantýna", "region": "praha", "logoUrl": "https://www.jidlovestylu.cz/wp-content/uploads/2021/09/jidlovestylu-kruh-350px.png", "url": "https://www.jidlovestylu.cz/mlsnakantyna/" },
   { "id": 63, "name": "Vybav se na párty", "region": "praha", "logoUrl": "https://cdn.myshoptet.com/usr/www.vybavsenaparty.cz/user/logos/logoparty_bez_pozadi.png", "url": "https://www.vybavsenaparty.cz/" },
   { "id": 64, "name": "Lucy Sweets", "region": "kraj_vysocina", "logoUrl": "https://e5f814a7bb.clvaw-cdnwnd.com/1aaa129aef407fbec3662a0d74f32cb6/200000032-7daaa7daac/450/Instalogo%20-%20transparent.webp", "url": "https://www.lucysweets.cz/" },
